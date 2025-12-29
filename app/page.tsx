@@ -22,6 +22,8 @@ const RoyalCutSalon = () => {
   const [activeSection, setActiveSection] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
+  let currentYear = new Date().getFullYear();
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -607,7 +609,7 @@ const RoyalCutSalon = () => {
           </div>
 
           <div className="border-t border-neutral-800 mt-8 pt-8 text-center text-neutral-500">
-            <p>© 2024 Royal Cut Salon Dubai. All rights reserved.</p>
+            <p>© {currentYear} Royal Cut Salon Dubai. All rights reserved.</p>
             <p className="mt-2 text-sm">Website designed for excellence</p>
           </div>
         </div>
