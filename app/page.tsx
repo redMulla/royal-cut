@@ -154,7 +154,9 @@ const RoyalCutSalon = () => {
                     key={section}
                     onClick={() => scrollToSection(section)}
                     className={`capitalize hover:text-amber-500 transition-colors font-medium ${
-                      activeSection === section ? "text-amber-500" : ""
+                      activeSection === section
+                        ? "text-amber-500 cursor-not-allowed"
+                        : "cursor-pointer"
                     }`}
                   >
                     {section}
